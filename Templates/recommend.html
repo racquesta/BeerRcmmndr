@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../static/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../static/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../static/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../static/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="../static/ico/favicon.png">
+    <title>BeerRcmmndr</title>
+    <!-- Bootstrap core CSS -->
+    <link href="../static/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+
+    <link href="../static/css/style.css" rel="stylesheet">
+
+    <!-- styles needed for carousel slider -->
+    <link href="../static/plugins/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="../static/plugins/owl-carousel/owl.theme.css" rel="stylesheet">
+
+    <!-- bxSlider CSS file -->
+    <link href="../static/plugins/bxslider/jquery.bxslider.css" rel="stylesheet"/>
+
+    <!-- Just for debugging purposes. -->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- include pace script for automatic web page progress bar  -->
+    <script>
+        paceOptions = {
+            elements: true
+        };
+    </script>
+    <script src="../static/js/pace.min.js"></script>
+
+
+</head>
+<body>
+<div id="wrapper">
+    <div class="header">
+    	<nav class="navbar  fixed-top navbar-site navbar-light bg-light navbar-expand-md"
+    		 role="navigation">
+    		<div class="container">
+
+            <div class="navbar-identity">
+
+
+    			<a href="/" class="navbar-brand logo logo-title">
+					<!-- ADD BEER LOGO HERE -->
+    			<!-- <span class="beer-icon"><i class="icon icon-search-1 ln-shadow-logo "></i> -->
+    			</span>BEER<span>RCMMNDR </span> </a>
+
+
+            </div>
+
+
+
+    			<div class="navbar-collapse collapse">
+
+    				<ul class="nav navbar-nav ml-auto navbar-right">
+    
+    					<li class="dropdown no-arrow nav-item"><a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+
+    						<span>Explore</span> <i class=" icon-down-open-big fa"></i></a>
+    						<ul
+    								class="dropdown-menu user-menu dropdown-menu-right">
+    							<li class="active dropdown-item"><a href="/"><i class="icon-home"></i> Home
+
+    							</a>
+    							</li>
+    							<li class="dropdown-item"><a href="/themagic"><i class="icon-star-circled"></i> The Magic </a>
+    							</li>
+    							<li class="dropdown-item" data-toggle="modal" data-target="#exampleModal"><a href="/filter/all/all"><i class="icon-th-thumb"></i> The Top 20 </a>
+    							</li>
+    							<li class="dropdown-item"><a href="/about"><i class="icon-heart"></i> About Us
+
+    							</a>
+    							</li>
+    						</ul>
+    					</li>
+    				</ul>
+    			</div>
+    			<!--/.nav-collapse -->
+    		</div>
+    		<!-- /.container-fluid -->
+    	</nav>
+    </div>
+ <!-- /.header -->
+	<!-- /.header -->
+	<div class="intro-inner">
+			<div class="about-intro" style="
+		background:url(../static/images/background-beer.jpg) no-repeat center;
+		background-size:cover;">
+		<div class="dtable hw100">
+                <div class="dtable-cell hw100">
+                    <div class="container text-center">
+
+                        <h1 class="intro-title animated fadeInDown"></h1>
+
+
+                    </div>
+                </div>
+            </div>
+			</div>
+	</div>
+  
+    <div class="main-container">
+        <div class="container">
+            <div class="row">
+				<!-- this (.mobile-filter-sidebar) part will be position fixed in mobile version -->
+				<!-- FILTERS FOR STYLE AND BREWERY THAT SHOWS UP IN THE RECOMMENDATIONS -->
+                <div class="col-md-4 page-sidebar mobile-filter-sidebar">
+                    <aside>
+                        <div class="inner-box">
+
+                            <div class="list-filter">
+                                <h5 class="list-title"><strong> {{ profile["user_name"] }} </strong>Profile</h5>
+
+                                <h3><strong>Algorithm Confidence</strong></h2>
+                                <p><strong>R2:</strong> {{ r2 }}</p>
+
+                                <hr>
+                                <h3><strong>User Info</strong></h2>
+                                <p><strong>Brewers Rated:</strong> {{ profile["Brewers:"] }} </p>
+                                <p><strong>Beers Rated / Reviewed:</strong> {{ profile["Beers Rated / Reviewed:"] }} </p>
+                                <p><strong>Top 3 Beers Rated:</strong></p>
+                                {% for item in top3 %}
+                                    <p><i>Beer:</i> {{ item["Beer Name"] }}</p>
+                                    <p><i>Brewery:</i> {{ item["Brewery"] }}</p>
+                                    <p><i>Style:</i> {{ item["Beer Style"] }}</p>
+                                    <hr>
+                                {% endfor %}                           
+
+                            <div style="clear:both"></div>
+                        </div>
+
+                        <!--/.categories-list-->
+                    </aside>
+                </div>
+				<!--/.page-side-bar-->
+
+                <div class="col-md-8 page-content col-thin-left">
+
+                    <div class="category-list">
+                        <div class="tab-box clearfix ">
+
+                            <!-- Nav tabs -->
+                            <div class="col-xl-12  box-title no-border">
+                                <div class="inner">
+                                    <h2><span> Beer </span> Recommendations
+                                    </h2>
+                                </div>
+                            </div>
+
+                        <div class="adds-wrapper jobs-list">
+
+                                {% for beer in recommend %}
+
+                                <div class="item-list job-item"> <div class="row">
+
+
+                                <div class="col-sm-1  col-xs-2 no-padding photobox">
+                                    <div class="add-image"><a href=""><img alt="company logo"
+                                                                           src={{ beer["ImageLink"] }}
+                                                                           class="thumbnail no-margin"></a></div>
+                                </div>
+                                <!--/.photobox-->
+                                <div class="col-sm-10  col-xs-10  add-desc-box">
+                                    <div class="ads-details jobs-item">
+                                        <h5 class="company-title "><a href="">{{ beer["Brewer"] }} </a></h5>
+                                        <h4 class="job-title"> {{ beer["Name"] }} </a>
+                                        </h4>
+                                                                    <span class="info-row">  <span class="item-location"><i
+                                                                            class="fa fa-map-marker"></i> Location: {{ beer["Location"] }} </span> <span
+                                                                            class="date"><i class=" icon-clock"> </i> Style: {{ beer["Style"] }} </span><span
+                                                                            class=" salary">	<i class=" icon-money"> </i> ABV: {{ beer["ABV"] }} </span></span>
+
+                                        <div class="jobs-desc">
+                                            A/an {{ beer["ScoreClass"] }} rated {{ beer["Style"] }}, {{ beer["Name"] }} has an average rating of 
+                                            {{ beer["Score"] }} across {{ beer["num_ratings"] }} reviews on BeerAdvocate.
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--/.add-desc-box-->
+
+                                <!--/.add-desc-box-->
+                                </div></div>
+                                {% endfor %}
+                            <!--/.job-item-->
+
+                        </div>
+                        <!--/.adds-wrapper-->
+                    </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- /.main-container -->
+</div>
+<!-- /.wrapper -->
+
+<!-- Modal Change City -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+             <img class="loading-image" src="https://78.media.tumblr.com/412af9534b4077c48c1ee185664765fc/tumblr_mwmrszUm9m1rjhxazo1_500.gif">
+            </div>
+          </div>
+        </div>
+      </div>
+
+<!-- Le javascript
+================================================== -->
+
+<!-- Placed at the end of the document so the pages load faster -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="../static/bootstrap/js/bootstrap.min.js"></script>
+<script src="../static/js/vendors.min.js"></script>
+
+<!-- include custom script for site  -->
+<script src=".../static/js/script.js"></script>
+
+
+</body>
+</html>

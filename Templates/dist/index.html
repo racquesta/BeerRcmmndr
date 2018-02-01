@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+    <title>Beer Recommender</title>
+    <!-- Bootstrap core CSS -->
+    <link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- styles needed for carousel slider -->
+    <link href="assets/plugins/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="assets/plugins/owl-carousel/owl.theme.css" rel="stylesheet">
+
+    <!-- bxSlider CSS file -->
+    <link href="assets/plugins/bxslider/jquery.bxslider.css" rel="stylesheet"/>
+
+    <!-- Just for debugging purposes. -->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- include pace script for automatic web page progress bar  -->
+    <script>
+        paceOptions = {
+            elements: true
+        };
+    </script>
+    <script src="assets/js/pace.min.js"></script>
+
+
+</head>
+<body>
+<div id="wrapper">
+    <div class="header">
+    	<nav class="navbar  fixed-top navbar-site navbar-light bg-light navbar-expand-md"
+    		 role="navigation">
+    		<div class="container">
+
+            <div class="navbar-identity">
+
+
+    			<a href="index.html" class="navbar-brand logo logo-title">
+					<!-- ADD BEER LOGO HERE -->
+    			<!-- <span class="beer-icon"><i class="icon icon-search-1 ln-shadow-logo "></i> -->
+    			</span>BEER<span>RECOMMENDER </span> </a>
+
+
+    			<!-- <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggler pull-right"
+    					type="button">
+
+    				<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30" height="30" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/></svg>
+
+
+    			</button> -->
+
+
+    			<!-- <button
+    					class="flag-menu country-flag d-block d-md-none btn btn-secondary hidden pull-right"
+    					href="#select-country" data-toggle="modal">	<span class="flag-icon flag-icon-us"></span>  <span class="caret"></span>
+    			</button> -->
+
+            </div>
+
+
+
+    			<div class="navbar-collapse collapse">
+    				<!-- <ul class="nav navbar-nav navbar-left">
+    					<li class="flag-menu country-flag tooltipHere hidden-xs nav-item" data-toggle="tooltip"
+    						data-placement="bottom" title="Select Country">	<a href="#select-country" data-toggle="modal" class="nav-link">
+
+    						<span class="flag-icon flag-icon-us"></span> <span class="caret"></span>
+
+    					</a>
+    					</li>
+    				</ul> -->
+    				<ul class="nav navbar-nav ml-auto navbar-right">
+    
+    					<li class="dropdown no-arrow nav-item"><a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+
+    						<span>Explore</span> <i class=" icon-down-open-big fa"></i></a>
+    						<ul
+    								class="dropdown-menu user-menu dropdown-menu-right">
+    							<li class="active dropdown-item"><a href="index.html"><i class="icon-home"></i> Home
+
+    							</a>
+    							</li>
+    							<li class="dropdown-item"><a href="the-magic.html"><i class="icon-star-circled"></i> The Magic </a>
+    							</li>
+    							<li class="dropdown-item"><a href="beer-list.html"><i class="icon-th-thumb"></i> Beer Database </a>
+    							</li>
+    							<li class="dropdown-item"><a href="about-us.html"><i class="icon-heart"></i> About Us
+
+    							</a>
+    							</li>
+    						</ul>
+    					</li>
+    				</ul>
+    			</div>
+    			<!--/.nav-collapse -->
+    		</div>
+    		<!-- /.container-fluid -->
+    	</nav>
+    </div>
+    <!-- /.header -->
+
+    <div class="intro" style="background-image: url(images/background-beer.jpg);">
+        <div class="dtable hw100">
+            <div class="dtable-cell hw100">
+                <div class="container text-center">
+                    <h1 class="intro-title animated fadeInDown"> Find a New Beer </h1>
+
+                    <p class="sub animateme fittext3 animated fadeIn">
+                        Get beer recommendations based off your BeerAdvocate profile
+                    </p>
+
+                    <div class="row search-row animated fadeInUp">
+                        <!-- <div class="col-xl-4 col-sm-4 search-col relative locationicon">
+                            <i class="icon-location-2 icon-append"></i>
+                            <input type="text" name="country" id="autocomplete-ajax"
+                                   class="form-control locinput input-rel searchtag-input has-icon"
+                                   placeholder="City/Zipcode..." value="">
+
+                        </div> -->
+                        <div class="col-xl-6 col-sm-6 search-col relative"> <input type="text" name="ads" class="form-control" placeholder="BeerAdvocate Username" value="">
+                        </div>
+                        <div class="col-xl-6 col-sm-6 search-col">
+                            <button class="btn btn-primary btn-search btn-block"><i
+                                    class="icon-search"></i><strong>Find Beer</strong></button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.intro -->
+
+    <div class="main-container">
+        <div class="container">
+
+            <div class="col-xl-12 content-box ">
+                <div class="row row-featured row-featured-category">
+                    <div class="col-xl-12  box-title no-border">
+                        <div class="inner"><h2><span>Browse by</span>
+                            Beer Style </h2>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-3 col-sm-3 col-xs-4 f-category">
+                        <a href="beer-list/americanales.html"><img src="https://www.webstaurantstore.com/uploads/buying_guide/2017/2/american-pale-ale.jpg" class="img-responsive" alt="img">
+                            <h6> American Ales </h6></a>
+                    </div>
+                    <div class="col-xl-2 col-md-3 col-sm-3 col-xs-4 f-category">
+                        <a href="beer-list.html"><img src="https://www.webstaurantstore.com/uploads/buying_guide/2017/2/american-lager.jpg" class="img-responsive"
+                                                     alt="img"> <h6> American Lagers </h6></a>
+                    </div>
+                    <div class="col-xl-2 col-md-3 col-sm-3 col-xs-4 f-category">
+                        <a href="beer-list.html"><img src="https://www.webstaurantstore.com/uploads/buying_guide/2017/2/belgian-pale-ale.jpg" class="img-responsive" alt="img">
+                            <h6> Belgian/French Ales </h6></a>
+                    </div>
+
+                    <div class="col-xl-2 col-md-3 col-sm-3 col-xs-4 f-category">
+                        <a href="beer-list.html"><img src="https://www.webstaurantstore.com/uploads/buying_guide/2017/2/english-pale-ale.jpg" class="img-responsive" alt="img"> <h6>
+                            English Ales </h6></a>
+                    </div>
+
+                    <div class="col-xl-2 col-md-3 col-sm-3 col-xs-4 f-category">
+                        <a href="beer-list.html"><img src="https://www.webstaurantstore.com/uploads/buying_guide/2017/2/oktoberfest.jpg" class="img-responsive" alt="img">
+                            <h6> Oktoberbest </h6></a>
+                    </div>
+
+                    <div class="col-xl-2 col-md-3 col-sm-3 col-xs-4 f-category">
+                        <a href="beer-list.html"><img src="https://www.webstaurantstore.com/uploads/buying_guide/2017/2/american-ipa.jpg" class="img-responsive"
+                                                          alt="img">
+                            <h6> American IPAs </h6></a>
+                    </div>
+
+                    <div class="col-xl-2 col-md-3 col-sm-3 col-xs-4 f-category">
+                        <a href="beer-list.html"><img src="https://www.webstaurantstore.com/uploads/buying_guide/2017/2/vienna-lager.jpg"
+                                                     class="img-responsive" alt="img"> <h6> German Lagers </h6></a>
+                    </div>
+
+                    <div class="col-xl-2 col-md-3 col-sm-3 col-xs-4 f-category">
+                        <a href="beer-list.html"><img src="https://www.webstaurantstore.com/uploads/buying_guide/2017/2/american-stout.jpg" class="img-responsive" alt="img">
+                            <h6> American Stouts </h6></a>
+                    </div>
+
+                    <div class="col-xl-2 col-md-3 col-sm-3 col-xs-4 f-category">
+                        <a href="beer-list.html"><img src="https://www.webstaurantstore.com/uploads/buying_guide/2017/2/german-helles.jpg" class="img-responsive" alt="img">
+                            <h6> German Ales </h6></a>
+                    </div>
+
+                    <div class="col-xl-2 col-md-3 col-sm-3 col-xs-4 f-category">
+                        <a href="beer-list.html"><img src="https://www.webstaurantstore.com/uploads/buying_guide/2017/2/imperial-or-double-ipa.jpg" class="img-responsive" alt="img">
+                            <h6> Imperial and Double IPAs </h6></a>
+                    </div>
+
+                    <div class="col-xl-2 col-md-3 col-sm-3 col-xs-4 f-category">
+                        <a href="beer-list.html"><img src="https://www.webstaurantstore.com/uploads/buying_guide/2017/2/hefeweizen.jpg" class="img-responsive" alt="img">
+                            <h6> Hefeweizens </h6></a>
+                    </div>
+
+                    <div class="col-xl-2 col-md-3 col-sm-3 col-xs-4 f-category">
+                        <a href="beer-list.html"><img src="https://www.webstaurantstore.com/uploads/buying_guide/2017/2/english-brown-porter.jpg" class="img-responsive" alt="img">
+                            <h6> English Porters </h6></a>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <div style="clear: both"></div>
+
+            <div class="col-xl-12 content-box ">
+				<div class="row row-featured">
+				<div class="col-xl-12  box-title ">
+					<div class="inner"><h2><span>Top Ranked</span>
+							Breweries </h2>
+	
+					</div>
+				</div>
+                
+                    <div style="clear: both"></div>
+                    <div class="tab-lite relative w100">
+							<!-- <div class="inner"><h2><span>Top</span>
+								Breweries </h2>
+		
+						</div> -->
+                        <!-- Nav tabs -->
+                        <!-- <ul class="nav nav-tabs " role="tablist">
+                            <li role="presentation" class="active nav-item"><a href="#tab1" aria-controls="tab1"
+                                                                               role="tab" data-toggle="tab"
+                                                                               class="nav-link"><i
+                                    class="icon-location-2"></i> Top Brewers</a>
+                            </li>
+                        </ul> -->
+
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="tab1">
+                                <div class="col-xl-12 tab-inner">
+                                    <div class="row">
+                                        <ul class="cat-list col-md-3  col-6 col-xxs-12">
+                                            <li><a href="beer-list.html"> Jester King Brewery </a>
+                                            </li>
+                                            <li><a href="beer-list.html"> Goose Island Beer Co. </a>
+                                            </li>
+                                            <li><a href="beer-list.html"> Founders Brewing Company </a>
+                                            </li>
+                                            <li><a href="beer-list.html"> Madhouse Brewing Company </a>
+                                            </li>
+                                            <li><a href="beer-list.html"> Alpine Beer Company </a>
+                                            </li>
+                                            <li><a href="beer-list.html"> Logsdon Farmhouse Ales </a>
+                                            </li>
+                                            <li><a href="beer-list.html"> Hill Farmstead Brewery </a>
+                                            </li>
+                                            <li><a href="beer-list.html"> Perennial Artisan Ales </a>
+                                            </li>
+                                        </ul>
+                                        <ul class="cat-list cat-list-border col-md-3  col-6 col-xxs-12">
+                                            <li><a href="beer-list.html"> Prairie Artisan Ales </a>
+                                            </li>
+                                            <li><a href="beer-list.html"> Cigar City Brewing </a>
+                                            </li>
+                                            <li><a href="beer-list.html"> Fiddlehead Brewing Company </a>
+                                            </li>
+                                            <li><a href="beer-list.html"> Columbus Brewing Company </a>
+                                            </li>
+                                            <li><a href="beer-list.html"> Trillium Brewing Company </a>
+                                            </li>
+                                            <li><a href="beer-list.html"> Funky Buddha Brewery </a>
+                                            </li>
+                                            <li><a href="beer-list.html"> Deschutes Brewery </a>
+                                            </li>
+                                            <li><a href="beer-list.html"> Firestone Walker Brewing Co. </a>
+                                            </li>
+                                        </ul>
+                                        <ul class="cat-list cat-list-border col-md-3  col-6 col-xxs-12">
+                                            <li><a href="category.html"> Surly Brewing Company </a>
+                                            </li>
+                                            <li><a href="category.html"> Fat Head's Brewery & Saloon </a>
+                                            </li>
+                                            <li><a href="category.html"> FiftyFifty Brewing Co. </a>
+                                            </li>
+                                            <li><a href="category.html"> Russian River Brewing Company </a>
+                                            </li>
+                                            <li><a href="category.html"> Old Nation Brewing Co. </a>
+                                            </li>
+                                            <li><a href="category.html"> Foundation Brewing Company </a>
+                                            </li>
+                                            <li><a href="category.html"> Kern River Brewing Company </a>
+                                            </li>
+                                            <li><a href="category.html"> Avery Brewing Company </a>
+                                            </li>
+                                        </ul>
+                                        <ul class="cat-list cat-list-border col-md-3  col-6 col-xxs-12">
+                                            <li><a href="category.html"> Noble Ale Works </a>
+                                            </li>
+                                            <li><a href="category.html"> Clown Shoes </a>
+                                            </li>
+                                            <li><a href="category.html"> Willoughby Brewing </a>
+                                            </li>
+                                            <li><a href="category.html"> SingleCut Beersmiths </a>
+                                            </li>
+                                            <li><a href="category.html"> Boneyard Beer Company </a>
+                                            </li>
+                                            <li><a href="category.html"> Allagash Brewing Company </a>
+                                            </li>
+                                            <li><a href="category.html"> Stone Brewing </a>
+                                            </li>
+                                            <li><a href="category.html"> The Lone Pint Brewery </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.main-container -->
+
+    <footer class="main-footer">
+    	<div class="footer-content">
+    		<div class="container">
+    			<div class="row">
+    				<div style="clear: both"></div>
+
+    				<div class="col-xl-12">
+    					<div class=" text-center paymanet-method-logo">
+							<h4>WE ACCEPT:</h4>
+    						<img src="images/site/payment/master_card.png" alt="img">
+    						<img alt="img" src="images/site/payment/visa_card.png">
+    						<img alt="img" src="images/site/payment/paypal.png">
+    						<img alt="img" src="images/site/payment/american_express_card.png"> <img alt="img" src="images/site/payment/discover_network_card.png">
+    						<img alt="img" src="images/site/payment/google_wallet.png">
+    					</div>
+
+    				</div>
+
+    			</div>
+    		</div>
+    	</div>
+    </footer>
+
+</div>
+<!-- /.wrapper -->
+
+
+
+<!-- Le javascript
+================================================== -->
+
+<!-- Placed at the end of the document so the pages load faster -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/js/vendors.min.js"></script>
+
+<!-- include custom script for site  -->
+<script src="assets/js/script.js"></script>
+
+
+
+<!-- include jquery autocomplete plugin  -->
+
+<script type="text/javascript" src="assets/plugins/autocomplete/jquery.mockjax.js"></script>
+<script type="text/javascript" src="assets/plugins/autocomplete/jquery.autocomplete.js"></script>
+<script type="text/javascript" src="assets/plugins/autocomplete/usastates.js"></script>
+
+<script type="text/javascript" src="assets/plugins/autocomplete/autocomplete-demo.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../static/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../static/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../static/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../../static/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="../../static/ico/favicon.png">
+    <title>BeerRcmmndr</title>
+    <!-- Bootstrap core CSS -->
+    <link href="../../static/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+
+    <link href="../../static/css/style.css" rel="stylesheet">
+
+    <!-- styles needed for carousel slider -->
+    <link href="../../static/plugins/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="../../static/plugins/owl-carousel/owl.theme.css" rel="stylesheet">
+
+    <!-- bxSlider CSS file -->
+    <link href="../../static/plugins/bxslider/jquery.bxslider.css" rel="stylesheet"/>
+
+    <!-- Just for debugging purposes. -->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- include pace script for automatic web page progress bar  -->
+    <script>
+        paceOptions = {
+            elements: true
+        };
+    </script>
+    <script src="../../static/js/pace.min.js"></script>
+
+
+</head>
+<body>
+<div id="wrapper">
+    <div class="header">
+    	<nav class="navbar  fixed-top navbar-site navbar-light bg-light navbar-expand-md"
+    		 role="navigation">
+    		<div class="container">
+
+            <div class="navbar-identity">
+
+
+    			<a href="/" class="navbar-brand logo logo-title">
+					<!-- ADD BEER LOGO HERE -->
+    			<!-- <span class="beer-icon"><i class="icon icon-search-1 ln-shadow-logo "></i> -->
+    			</span>BEER<span>RCMMNDR </span> </a>
+
+
+    			<!-- <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggler pull-right"
+    					type="button">
+
+    				<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30" height="30" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/></svg>
+
+
+    			</button> -->
+
+
+    			<!-- <button
+    					class="flag-menu country-flag d-block d-md-none btn btn-secondary hidden pull-right"
+    					href="#select-country" data-toggle="modal">	<span class="flag-icon flag-icon-us"></span>  <span class="caret"></span>
+    			</button> -->
+
+            </div>
+
+
+
+    			<div class="navbar-collapse collapse">
+    				<!-- <ul class="nav navbar-nav navbar-left">
+    					<li class="flag-menu country-flag tooltipHere hidden-xs nav-item" data-toggle="tooltip"
+    						data-placement="bottom" title="Select Country">	<a href="#select-country" data-toggle="modal" class="nav-link">
+
+    						<span class="flag-icon flag-icon-us"></span> <span class="caret"></span>
+
+    					</a>
+    					</li>
+    				</ul> -->
+    				<ul class="nav navbar-nav ml-auto navbar-right">
+    
+    					<li class="dropdown no-arrow nav-item"><a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+
+    						<span>Explore</span> <i class=" icon-down-open-big fa"></i></a>
+    						<ul
+    								class="dropdown-menu user-menu dropdown-menu-right">
+    							<li class="active dropdown-item"><a href="/"><i class="icon-home"></i> Home
+
+    							</a>
+    							</li>
+    							<li class="dropdown-item"><a href="/themagic"><i class="icon-star-circled"></i> The Magic </a>
+    							</li>
+    							<li class="dropdown-item" data-toggle="modal" data-target="#exampleModal"><a href="/filter/all/all"><i class="icon-th-thumb"></i> The Top 20 </a>
+    							</li>
+    							<li class="dropdown-item"><a href="/about"><i class="icon-heart"></i> About Us
+
+    							</a>
+    							</li>
+    						</ul>
+    					</li>
+    				</ul>
+    			</div>
+    			<!--/.nav-collapse -->
+    		</div>
+    		<!-- /.container-fluid -->
+    	</nav>
+    </div>
+        <!-- /.header -->
+
+    <div class="intro-inner">
+        <div class="about-intro" style="
+    background:url(../static/images/background-beer.jpg) no-repeat center;
+	background-size:cover;">
+
+            <div class="dtable hw100">
+                <div class="dtable-cell hw100">
+                    <div class="container text-center">
+
+                        <h1 class="intro-title animated fadeInDown"> The Magic </h1>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <!--/.about-intro -->
+
+    </div>
+    <!-- /.intro-inner -->
+
+    <div class="main-container inner-page">
+        <div class="container">
+            <div class="section-content">
+                <div class="row ">
+                    <h1 class="text-center title-1"> How it <strong>Works</strong></h1>
+                    <hr class="center-block small text-hr">
+                </div>
+                <div class="faq-content">
+
+                    <div aria-multiselectable="true" role="tablist" id="accordion" class="panel-group faq-panel">
+                        <div class="card">
+                            <div id="headingOne" role="tab" class="card-header">
+                                <h4 class="card-title">
+                                    <a aria-controls="collapseOne" aria-expanded="true" href="#collapseOne"
+                                       data-parent="#accordion" aria-expanded="true"  data-toggle="collapse" >
+                                        1. Hand-Picked Categorical Information
+                                    </a>
+                                </h4>
+                            </div>
+                            <div aria-labelledby="headingOne" role="tabpanel" class="panel-collapse collapse show"
+                                 id="collapseOne">
+                                <div class="card-body">
+									After a long exploration period we agreed on a strategy that would enable us to harness
+									the features of beer styles, while also injecting unique characteristics of different beers 
+									within those styles.
+                                    <br><br>
+									Unfortunately, that meant we had to do some manual work upfront to classify the different 
+									beer styles with categorical information. As a group, we determined a handful of characteristics 
+									for each beer style, namely: color, flavor, hoppiness, maltiness, fruitiness, body, 
+									sweetness, sour, spicy, bitter, aroma, and custom flavor.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div id="headingTwo" role="tab" class="card-header">
+                                <h4 class="card-title">
+                                    <a aria-controls="collapseTwo" aria-expanded="false" href="#collapseTwo"
+                                       data-parent="#accordion" aria-expanded="true"  data-toggle="collapse"  class="collapsed">
+                                        2. Scrape, Scrape, and Scrape Some More
+                                    </a>
+                                </h4>
+                            </div>
+                            <div aria-labelledby="headingTwo" role="tabpanel" class="panel-collapse collapse"
+                                 id="collapseTwo">
+                                <div class="card-body">
+                                    Scrape BeerAdvocate (sorry, BA) to build a beer database, since this somehow does not exist 
+                                    online in any meaningful fashion. Also scrape BeerAdvocate for User Reviews, as this is what we 
+                                    will eventually use as data for our machine learning algorithm to make recommendations. Again, sorry, BA.
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div id="headingThree" role="tab" class="card-header">
+                                <h4 class="card-title">
+                                    <a aria-controls="collapseThree" aria-expanded="false" href="#collapseThree"
+                                       data-parent="#accordion" aria-expanded="true"  data-toggle="collapse"  class="collapsed">
+                                        3. One Hot Encoding, the Pandas Way
+                                    </a>
+                                </h4>
+                            </div>
+                            <div aria-labelledby="headingThree" role="tabpanel" class="panel-collapse collapse"
+                                 id="collapseThree">
+                                <div class="card-body">
+                                    Use one hot encoding to assign values to our categorical information including color, aroma, and 
+                                    custom flavor. Instead of using the SciKit Learn way, we flexed our Pandas skills and used dummy values 
+                                    to one hot encode our features.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div id="heading_04" role="tab" class="card-header">
+                                <h4 class="card-title">
+                                    <a aria-controls="collapse_04" aria-expanded="false" href="#collapse_04"
+                                       data-parent="#accordion" aria-expanded="true"  data-toggle="collapse"  class="collapsed">
+									   4. A Little Machine Learning Powder
+                                    </a>
+                                </h4>
+                            </div>
+                            <div aria-labelledby="heading_04" role="tabpanel" class="panel-collapse collapse"
+                                 id="collapse_04">
+                                <div class="card-body">
+                                    Test machine learning algorithms. And continue testing. And test some more. We started with K-Nearest Neighbors 
+                                    and had good results, but had difficulty automating the selection of the optimal K-value. We experimented with a 
+                                    handful of other machine learning methods before decoding on Random Forest as our algorithm of choice. 
+                                    <br><br>
+                                    This is only the half of it. We had to account for Users without enough reviews, and for users for which our 
+                                    algorithm did not give any recommendations (drink more beer, everyone). All in all, we found a method that delivers 
+                                    great results.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div id="heading_05" role="tab" class="card-header">
+                                <h4 class="card-title">
+                                    <a aria-controls="collapse_05" aria-expanded="false" href="#collapse_05"
+                                       data-parent="#accordion" aria-expanded="true"  data-toggle="collapse"  class="collapsed">
+                                        5. Drumroll, Please
+                                    </a>
+                                </h4>
+                            </div>
+                            <div aria-labelledby="heading_05" role="tabpanel" class="panel-collapse collapse"
+                                 id="collapse_05">
+                                <div class="card-body">
+                                    Put everything together, and we have an interactive site which takes in a BeerAdvocate username, scrapes 
+                                    the site in real time for that users reviews, and then runs a machine learning algorithm to determine which beers 
+                                    that user might like. We eliminate the beers the user has already rated from our database, so as not to recommend 
+                                    a beer the user has already had, and then return a list of beer recommendations with high confidence.
+                                    <br><br>
+                                    Voila.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+        </div>
+
+        
+        <div class="parallaxbox about-parallax-bottom">
+                <div class="container">
+                    <div class="row text-center featuredbox">
+                        <div class="col-sm-3 xs-gap">
+                            <div class="inner">
+                                <div class="add-image"><img alt="bsoup"
+                                        src="../../static/images/bsoup.jpg"
+                                        class="thumbnail no-margin"></a></div>
+                                <h3 class="title-4">BeautifulSoup</h3>
+        
+                            </div>
+                        </div>
+                        <div class="col-sm-3 xs-gap">
+                            <div class="inner">
+                                    <div class="add-image"><img alt="pandas"
+                                        src="../../static/images/pandas.png"
+                                        class="thumbnail no-margin"></a></div>
+                                <h3 class="title-4">Pandas</h3>
+        
+                            </div>
+                        </div>
+                        <div class="col-sm-3 xs-gap">
+                            <div class="inner">
+                                    <div class="add-image"><img alt="scikit"
+                                        src="../../static/images/scikit.png"
+                                        class="thumbnail no-margin"></a></div>
+                                <h3 class="title-4">ScikitLearn</h3>
+        
+                            </div>
+                        </div>
+                        <div class="col-sm-3 xs-gap">
+                                <div class="inner">
+                                        <div class="add-image"><img alt="js"
+                                            src="../../static/images/js.png"
+                                            class="thumbnail no-margin"></a></div>
+                                    <h3 class="title-4">HTML/CSS/Javascript</h3>
+            
+                                </div>
+                            </div>
+        
+        
+                    </div>
+                </div>
+        
+            </div>
+    </div>
+    <!-- /.main-container -->
+
+
+<!-- /.footer -->
+</div>
+<!-- /.wrapper -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+             <img class="loading-image" src="https://78.media.tumblr.com/412af9534b4077c48c1ee185664765fc/tumblr_mwmrszUm9m1rjhxazo1_500.gif">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<!-- Modal Change City -->
+
+
+
+<!-- /.modal -->
+
+<!-- Le javascript
+================================================== -->
+
+<!-- Placed at the end of the document so the pages load faster -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="../../static/bootstrap/js/bootstrap.min.js"></script>
+<script src="../../static/js/vendors.min.js"></script>
+
+<!-- include custom script for site  -->
+<script src="../../static/js/script.js"></script>
+
+</body>
+</html>

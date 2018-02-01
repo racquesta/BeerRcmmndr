@@ -1,0 +1,49 @@
+Color,Flavor,Hoppiness,Maltiness,Fruitiness,Body,Sweetness,Custom Flavor,Sour,Aroma,spicy,bitter,csv_name,style_name,match_name
+pale,1,0,0,0,1,0,0,0,0,0,0,americanadjunctlager,American Adjunct Lager,americanadjunctlager
+gold,2,2,2,0,1,0,0,0,0,2,0,munichhelleslager,Munich Helles Lager,munichhelleslager
+pale,2,2,0,0,2,0,0,0,floral,0,2,germanpilsener,German Pilsener,germanpilsener
+gold,2,3,2,0,2,0,0,0,floral,0,2,czechpilsener,Czech Pilsener,czechpilsener
+amber,2,0,2,0,2,0,0,0,caramel,0,0,americanamberredlager,American Amber / Red Lager,americanamberredlager
+amber,2,1,0,0,3,0,toasted,0,0,0,0,oktoberfest,Märzen / Oktoberfest,märzenoktoberfest
+black,1,0,1,0,2,1,0,0,0,0,0,schwarzbier,Schwarzbier,schwarzbier
+amber,2,2,2,0,2,2,0,0,0,0,0,viennalager,Vienna Lager,viennalager
+amber,3,1,3,0,2,2,toasted,0,0,0,0,bock,Bock,bock
+dark ,3,0,2,0,3,0,chocolate,0,0,0,0,doppelbock,Doppelbock,doppelbock
+gold,2,0,2,3,2,0,0,0,0,2,0,weizenbock,Weizenbock,weizenbock
+gold,2,2,0,0,2,0,0,0,0,0,0,maibockhellesbock,Maibock / Helles Bock,maibockhellesbock
+dark ,2,2,2,0,2,0,0,0,0,0,0,americanbrownale,American Brown Ale,americanbrownale
+dark ,2,1,2,0,3,2,0,0,0,0,0,englishbrownale,English Brown Ale,englishbrownale
+amber,2,2,2,1,2,0,caramel,0,0,0,0,americanamberredale,American Amber / Red Ale,americanamberredale
+amber,2,2,2,0,2,0,0,0,0,0,0,americanpalealeapa,American Pale Ale (APA),americanpalealeapa
+gold,2,1,1,1,1,0,0,0,fruit,0,1,americanblondeale,American Blonde Ale,americanblondeale
+gold,2,2,0,2,1,0,0,0,fruit,0,2,englishbitter,English Bitter,englishbitter
+gold,2,2,2,2,2,0,0,0,fruit,0,0,englishpaleale,English Pale Ale,englishpaleale
+amber,2,3,2,0,2,0,herbal,0,0,0,3,americanipa,American IPA,americanipa
+amber,3,3,3,0,2,0,0,0,0,0,3,americandoubleimperialipa,American Double / Imperial IPA,americandoubleimperialipa
+gold,2,2,2,0,2,0,0,0,0,0,0,englishindiapalealeipa,English India Pale Ale (IPA),englishindiapalealeipa
+dark ,2,1,2,0,2,2,burnt,0,0,0,0,americanporter,American Porter,americanporter
+dark ,1,2,0,0,2,1,0,0,0,0,2,englishporter,English Porter,englishporter
+dark ,3,0,0,0,2,0,caramel,0,0,0,2,balticporter,Baltic Porter,balticporter
+black,2,1,1,0,2,0,roasted,0,0,0,0,americanstout,American Stout,americanstout
+black,2,2,2,0,3,2,roasted,0,0,0,0,americandoubleimperialstout,American Double / Imperial Stout,americandoubleimperialstout
+black,2,2,1,0,2,1,roasted,0,0,0,0,oatmealstout,Oatmeal Stout,oatmealstout
+black,2,0,2,0,3,2,0,0,0,0,0,milksweetstout,Milk / Sweet Stout,milksweetstout
+black,2,1,2,0,1,0,roasted,0,0,0,2,irishdrystout,Irish Dry Stout,irishdrystout
+pale,2,2,1,0,2,1,toasted,0,0,0,1,belgianpaleale,Belgian Pale Ale,belgianpaleale
+gold,3,0,2,2,2,1,caramel,0,fruit,2,1,dubbel,Dubbel,dubbel
+gold,2,1,3,1,1,2,0,0,0,0,2,tripel,Tripel,tripel
+amber,3,0,3,2,3,2,brown sugar,0,0,0,1,quadrupelquad,Quadrupel (Quad),quadrupelquad
+dark ,3,1,2,2,2,0,0,0,0,2,0,belgianstrongdarkale,Belgian Strong Dark Ale,belgianstrongdarkale
+gold,2,0,0,3,2,1,earthy,2,fruit,0,2,saisonfarmhouseale,Saison / Farmhouse Ale,saisonfarmhouseale
+pale,2,1,1,1,2,0,wheat,0,0,0,2,americanpalewheatale,American Pale Wheat Ale,americanpalewheatale
+pale,2,0,0,0,2,0,wheat,0,0,0,0,witbier,Witbier,witbier
+gold,2,0,0,2,2,0,wheat,2,0,0,0,berlinerweissbier,Berliner Weissbier,berlinerweissbier
+amber,2,0,2,2,2,1,banana,0,0,0,1,dunkelweizen,Dunkelweizen,dunkelweizen
+gold,2,1,0,2,2,0,0,1,0,0,1,hefeweizen,Hefeweizen,hefeweizen
+gold,3,0,0,0,2,0,0,3,0,0,0,americanwildale,American Wild Ale,americanwildale
+amber,2,1,1,3,2,2,0,2,0,0,0,lambicfruit,Lambic - Fruit,lambicfruit
+amber,2,0,2,2,1,0,0,3,0,0,0,flandersredale,Flanders Red Ale,flandersredale
+gold,2,0,0,3,2,0,0,3,0,0,0,gueuze,Gueuze,gueuze
+amber,2,0,2,0,2,0,pumpkin,0,0,0,0,pumpkinale,Pumpkin Ale,pumpkinale
+amber,2,1,2,0,2,2,0,1,0,2,2,ryebeer,Rye Beer,ryebeer
+dark ,3,0,2,0,2,0,smoke,0,0,0,0,smokedbeer,Smoked Beer,smokedbeer
